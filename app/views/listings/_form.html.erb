@@ -1,0 +1,23 @@
+<h1>City Form</h1>
+
+<%=form_for(@listing) do |f| %>
+  <label>Title</label>
+  <%= f.text_field :title %>
+  <label>Description</label>
+
+  <%= f.text_field :description %>
+  <label>Address</label>
+
+  <%= f.text_field :address %>
+<label>Listing Type</label>
+
+  <%= f.radio_button_tag(:listing_type, "house") %>
+  <%= label_tag(:listing_type, )
+  <%= f.radio_button_tag(:listing_type, "house") %>
+
+
+  <%= f.text_field :price %>
+
+
+  <%=f.submit %>
+<% end %>
